@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>stylish</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<link rel="stylesheet" href="main.css">
+		
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168224855-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+		
+	  gtag('config', 'UA-168224855-1');
+	</script>
+<script>
+//獲取瀏覽器頁面可見高度和寬度
+var _PageHeight = document.documentElement.clientHeight,
+_PageWidth = document.documentElement.clientWidth;
+//計算loading框距離頂部和左部的距離（loading框的寬度為215px，高度為61px）
+var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+_LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+//在頁面未載入完畢之前顯示的loading Html自定義內容
+var _LoadingHtml = `<div id="loadingDiv" style="position:absolute;left:0;width:100%;height:${_PageHeight}px;top:0;opacity:0.8;filter:alpha(opacity=80);z-index:10000;"><img src="loading.gif" style="position: absolute; cursor1: wait; left: ${_LoadingLeft}px; top:${_LoadingTop}px; width: auto; height: 57px; line-height: 57px; padding-left: 50px; padding-right: 5px; no-repeat scroll 5px 10px;"></div>`;
+//呈現loading效果
+document.write(_LoadingHtml);
+//監聽載入狀態改變
+document.onreadystatechange = completeLoading;
+//載入狀態為complete時移除loading效果
+function completeLoading() {
+if (document.readyState == "complete") {
+var loadingMask = document.getElementById('loadingDiv');
+loadingMask.parentNode.removeChild(loadingMask);
+}
+}
+</script>
+	</head>
+
+
+	<body>
+		<!-- Header -->
+			<header class="header">
+
+				<a class='logo-a' href="index.html"><img class="logo" src="images/logo.png"></a>
+				<!--nav-->
+		   
+		   <div class= "main-nav">
+			   <div class="main-nav-item">
+				   <a href="index.html?tag=women" class='women'>女&emsp;裝</a>
+			   </div>
+			   <div class="space">|</div>
+			   <div class="main-nav-item">
+				   <a href="index.html?tag=men" class='men'>男&emsp;裝</a>
+			   </div>
+			   <div class="space">|</div>
+			   <div class="main-nav-item">
+				   <a href="index.html?tag=accessories" class='accessories'>配&emsp;件</a>
+			   </div>
+			   </div>
+
+<div class="search">
+    <input class="search-input" type="text"> 
+    <img class='search-icon' src="images/search.png">			  
+</div>
+
+<div class="cart-member">
+	<a href="cart.html">
+<div class="cart"><img class="cart-img" src="images/cart.png"></div>
+<div class='cart-number'>0</div>
+    </a>
+<div class="member"><img class="member-img" src="images/member.png"></div>
+    </div>     
+<div>
+	<img class="mobile-search-icon" src="images/search.png">
+		</div>
+
+		<div class="sticker">
+			<div class="sticker-cart">
+		<a href="cart.html">
+		    <button type="button" class="mobile-cart-btn">
+			<img class="mobile-cart-img" src="images/cart-mobile.png">
+			<div class='mobile-cart-number'>0</div>
+			<p class="mobile-cart-text">購物車</p></button></a></div>
+		<div class="mobile-space">|</div>	
+		<div class="sticker-member">
+			<button type="button" class="mobile-member-btn">
+				<img class="mobile-member-img" src="images/member-mobile.png">
+				<p class="mobile-member-text">會員</p>
+			</button></div>
+			</div>
+
+  </header>
+
+		<!-- Banner -->
+<div class="banner-top"></div>
+
+   <div class= "mobile-navlist">
+	<div class="mobile-navlist-item">
+		<a href="index.html?tag=women" class='mobile-women'>女裝</a>
+	</div>
+	<div class="mobile-space">|</div>
+	<div class="mobile-navlist-item">
+		<a href="index.html?tag=men" class='mobile-men'>男裝</a>
+	</div>
+	<div class="mobile-space">|</div>
+	<div class="mobile-navlist-item">
+		<a href="index.html?tag=accessories" class='mobile-accessories'>配件</a>
+	</div>
+    </div>
+
+	<div class="banner">
+	<!--
+		<div class="banner-text">
+		<p class="banner-text-line1">
+		於是</p>
+		<p class="banner-text-line2">
+			我也想要給你</p>
+		<p class="banner-text-line3">	
+		一個那麼美好的自己。</p>
+		<p class="banner-text-line4">
+        不朽《和自己和好如初》
+		</p>
+	</div>
+	
+	<img class="banner-photo" src="201807242228.jpg">
+-->
+
+</div>
+	
+		<!-- content-->
+<div class="products"></div>
+<!--
+	<div class="row">
+<div class="content-box">
+	<img class="box-img" src="main.jpg">
+<div class="box-text">
+	<div class="box-text-color"></div>
+</div>
+	<div class="box-text-name">名字</div>
+	<div class="box-text-price">TWD.</div>
+</div>	
+<div class="content-box">
+	<img class="box-img" src="main.jpg">
+	<div class="box-text">
+		<div class="box-text-color"></div>
+	
+		<div class="box-text-name">名字</div>
+		<div class="box-text-price">TWD.</div>
+	</div>
+</div>	
+<div class="content-box">
+	<img class="box-img" src="main.jpg">
+	<div class="box-text">
+		<div class="box-text-color"></div>
+	
+		<div class="box-text-name">名字</div>
+		<div class="box-text-price">TWD.</div>
+	</div>
+</div>	
+<div class="content-box">
+	<img class="box-img" src="main.jpg">
+	<div class="box-text">
+		<div class="box-text-color"></div>
+	
+		<div class="box-text-name">名字</div>
+		<div class="box-text-price">TWD.</div>
+	</div>
+</div>	
+<div class="content-box">
+	<img class="box-img" src="main.jpg">
+	<div class="box-text">
+		<div class="box-text-color"></div>
+	
+		<div class="box-text-name">名字</div>
+		<div class="box-text-price">TWD.</div>
+	</div>
+</div>	
+<div class="content-box">
+	<img class="box-img" src="main.jpg">
+	<div class="box-text">
+		<div class="box-text-color"></div>
+	
+		<div class="box-text-name">名字</div>
+		<div class="box-text-price">TWD.</div>
+	</div>
+</div>	
+</div>
+
+-->
+		<!-- Footer -->
+			<footer class="footer">
+
+	   <div class="footer-list">
+ <div class="footer-list-item">
+  <a href="#">關於Stylish</a></div>
+  <div class="footer-list-item"> 
+  <a href="#">服務條款</a></div>
+  <div class="footer-list-item">
+  <a href="#">隱私政策</a></div>
+  <div class="footer-list-item">
+	<a href="#">聯絡我們</a></div>
+	<div class="footer-list-item">
+    <a href="#">FAQ</a></div>
+		</div>
+		
+		<div class="social-links">
+		<a href="#"><img class="line" src="images/line.png" width="1rem"></a>
+		<a href="#"><img class="twitter" src="images/twitter.png" width="1rem"></a>
+		<a href="#"><img class="facebook" src="images/facebook.png" width="1rem"></a>
+		</div>	
+
+	</div>
+        <div class="copyright"> &copy; 2018. All rights reserved.</div>
+			
+	</footer>
+	<div class="blank"></div>
+	<script src="main.js"></script>
+	<script src="fb-login.js"></script>
+	</body>
+</html>

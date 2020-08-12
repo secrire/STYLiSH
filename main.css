@@ -1,0 +1,469 @@
+  /* Basic */
+  *{
+    box-sizing: border-box;
+    color:rgb(37, 37, 37);
+    font-size: 14px;
+  } 
+  body {
+    background-color: white;
+    margin: auto;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  ul li{
+    display: inline;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    background-color: white;
+    width:100%;
+    padding: 16px 26px 16px 40px;
+    align-items: center;
+  }
+  .logo-a{
+    text-align: center;
+  }
+  .logo{
+    width: 170px;
+  }
+  .sticker{
+    display: none;
+  }
+  
+    /* Nav */
+  .main-nav{
+    width: 330px;
+    margin: 0 auto 0 20px;
+    display: flex;
+    align-items: center;
+  }
+  .main-nav-item {
+    margin: auto;
+    text-align: center;
+    width: 60px;
+  }
+  .women,
+  .men,
+  .accessories{
+    font-size: 15px;
+    color: rgb(26, 23, 23);
+    border: none;
+    background: transparent;
+    margin: auto;
+    outline: none;
+
+  }
+  .women:hover,
+  .men:hover,
+  .accessories:hover {
+    text-decoration: none;
+    color: rgb(187, 100, 28);
+    position: relative; /*往右下位移1px*/
+    top: 1px;
+    left: 1px;
+  }
+  .space{
+    color: rgb(26, 23, 23);
+  }
+  .search {
+    width: 140px;
+    display: flex;
+    position: relative;
+  } 
+  .search-icon{
+    width: 20%;
+    position: absolute;
+    left:105px;
+    top: 1px;
+    z-index: 1; 
+  } 
+  .search-input {
+    height: 28px;
+    width: 140px;
+    border: 1px grey solid;
+    border-radius: 60px;
+    text-align: center;
+    outline: none;
+  }
+  .mobile-search-icon{
+    display: none;
+  }
+  .cart-member{
+    margin-left: 18px;
+    display: flex;
+    position: relative;
+  }
+  .cart, .member{
+    display: inline-block;
+    margin: 0 13px;
+  } 
+  .cart-number{
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    height: 23px;
+    width: 23px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px rgb(153, 152, 152) solid;
+    border-radius: 60px;
+    background-color: rgb(189, 187, 187);
+    opacity: 0.9;
+    box-shadow: 1px 1px 1px 1px rgba(150, 149, 149, 0.575);
+    text-align: center;
+    line-height: 22px; 
+  }
+
+    /* Banner */
+  .banner-top{
+    background-color: black;
+    height: 19px;
+  }
+  .mobile-navlist {
+    display: none; 
+  }
+  .banner {
+    width: 100%;
+    padding-bottom: 365px;    /*padding% 會隨width變動實際尺寸*/
+    position: relative;
+  }
+  .banner-div{
+    position: absolute;   /*均位左上角，重疊在一起*/
+    transition: opacity 4s linear; /*重點：定義一個透明度的transition*/
+    width: 100%;
+    height: 340px;
+  }   
+  .banner-photo{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  .banner-text{
+    color: rgb(56, 54, 54);
+    position:absolute;
+    top: 120px;
+    left: 190px;
+  }
+  .banner-text-group1{
+    font-size: 21px;
+    padding:4px 0;
+  }
+  .banner-text-group2{
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .banner-dots{
+    width: 150px;
+    height: 50px;
+    margin-top: -50px ;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+  }
+  .banner-dot{
+    width: 12px;
+    height: 12px;
+    border: 1px lightgray solid;
+    border-radius: 60px;
+  }
+  /*
+  .banner-text-line1,
+  .banner-text-line2,
+  .banner-text-line3{
+    font-size:20px; 
+    padding:1.5px;
+  }
+  .banner-text-line4{
+    font-size:15px; 
+    padding: 1.5px;
+  }
+  */
+  
+        /* Content */
+  
+  .products {
+    width: 70%;
+    margin: 16px auto 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .product-div{
+    width: 30%;
+    margin: 16px  7px;
+  }
+  .product-img{
+    width: 100%;
+  }
+  .product-color{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 5px 3px;
+  }
+  .product-title, .product-price{
+    font-size: 14px;
+    color: rgb(63, 62, 62);
+    text-align: left;
+    margin: 5px 0;
+    letter-spacing: 2px;
+  }  
+  
+  /* Footer */
+  .footer {
+    background-color: rgb(54, 52, 52);
+    width: 100%; 
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-list{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-list-item a {
+    color: white;
+    font-size: 15px;
+  }
+  .footer-list-item a:hover {
+    color: rgba(248, 139, 131, 0.973);
+    position: relative; /*往右下位移1px*/
+    top: 1px;
+    left: 1px;
+  }
+  .social-links{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .line, .twitter, .facebook{
+    width: 28px;
+    margin: 7px;
+  }
+  .copyright{
+    font-size: 1px;
+      color: gray; 
+  }
+ 
+  
+  /* media */
+  
+  @media (max-width: 768px) {
+    .header{
+      padding:17px;
+    }
+    .logo-a{
+      margin: 0 auto;
+    }
+    .logo{
+      width: 140px;
+    }
+    .main-nav,
+    .search,
+    .cart-member{
+      display: none;
+    }
+    .mobile-search-icon{
+      display: block;
+      position: absolute;
+      width: 32px;
+      right: 34px;
+      top: 16px;
+    }
+    .mobile-search-input{
+      height: 23px;
+      width: 50%;
+      border: 1px grey solid;
+      border-radius: 60px;
+      margin: auto;
+      text-align: center;
+      outline: none;
+    }
+    .new-mobile-search-icon{
+      position: absolute;
+      width: 32px;
+      right: 46px;
+      top: 14px;
+    }
+    .banner-top{
+     display: none;
+    }
+    .mobile-navlist{
+      display: flex;
+      text-align: center;
+      background:rgb(54, 52, 52);
+      margin: 0;
+      padding: 15px;
+      align-items: center;
+    }
+    .mobile-navlist-item {
+      flex-grow: 1;
+      list-style: none;
+    }
+    .mobile-women,
+    .mobile-men,
+    .mobile-accessories{
+      color: grey;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+    .mobile-women:hover,
+    .mobile-men:hover,
+    .mobile-accessories:hover{
+      color: lightgray;
+    }
+    .mobile-space{
+      color:#f0e9e9;
+    }
+    .banner{
+      height: 200px;
+      padding-bottom: 0;
+    }
+    .banner-div{
+      height: 200px;
+    }
+    .banner-text{
+      color: rgb(56, 54, 54);
+      position:absolute;
+      top: 35px;
+      left: 33px;
+    }
+    .banner-text-group1{
+      font-size: 13px;
+      padding:3px 0;  
+    }
+    .banner-text-group2{
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .banner-dots{
+      width: 60px;
+      height: 20px;
+      margin-top: -20px;
+    }
+    .banner-dot{
+      width: 5px;
+      height: 5px;
+      margin: 0 4px;
+      border: 0.3px lightgray solid;
+    }
+    .products{
+      width: 90%;
+      margin: 4px auto 25px auto;
+    } 
+    .product-div{
+      width: 45%;
+      margin: 15px 6px;
+    }
+    .product-color{
+      width: 12px;
+      height: 12px;
+      margin: 4px 3px;
+    }
+    .product-title, .product-price{
+      font-size: 10px;
+      margin: 4px 0;
+      letter-spacing: 1.2px;
+    }  
+    .footer{
+      padding: 18px;
+    }
+    .footer-list {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100px;
+      width: 60%;
+    }
+    .footer-list-item{
+      margin: 5px 0;
+    }
+    .footer-list-item a{
+      color: rgb(230, 221, 221);
+      font-size: 14px;
+    }
+    .social-links{
+      display:flex;
+      width: 30%;
+      padding-left: 10px;
+    }
+    .line, .twitter, .facebook{
+      width: 20px;
+      margin: 7px;
+    }
+    .copyright{
+      padding: 10px;
+    }
+    .sticker{
+      display: flex;  
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1px;
+      background-color: rgb(54, 52, 52);
+      align-items: center;
+    }
+    .sticker-cart, .sticker-member{
+      flex-grow: 1;
+    }
+    .mobile-cart-btn, .mobile-member-btn{
+      background: transparent;
+      border: none;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .mobile-cart-number{
+      position: absolute;
+      right: 75px;
+      top: 20px;
+      height: 24px;
+      width: 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border: 1px rgb(153, 152, 152) solid;
+      border-radius: 60px;
+      background-color: rgb(189, 187, 187);
+      opacity: 0.9;
+      box-shadow: 1px 1px 1px 1px rgba(150, 149, 149, 0.575);
+      text-align: center;
+      line-height: 22px;
+    }
+    .mobile-cart-img, .mobile-member-img{
+      vertical-align: middle;
+      width: 40px;
+    }
+    .mobile-cart-text, .mobile-member-text{
+      color: #f0e9e9;
+      font-size: 15px;
+      vertical-align: middle;
+    }
+    .blank{
+      height: 70px;
+    }
+  
+    @media (min-width: 1200px) {
+    *{
+      max-width: 1200px;
+      margin: auto;
+      }
+    }
+  
+  
+  

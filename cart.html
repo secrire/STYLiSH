@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>stylish</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+        <link rel="stylesheet" href="cart.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168224855-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168224855-1');
+</script>
+<script>
+    var _PageHeight = document.documentElement.clientHeight,
+    _PageWidth = document.documentElement.clientWidth;
+    var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+    _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+    var _LoadingHtml = `<div id="loadingDiv" style="position:absolute;left:0;width:100%;height:${_PageHeight}px;top:0;opacity:0.8;filter:alpha(opacity=80);z-index:10000;"><img src="loading.gif" style="position: absolute; cursor1: wait; left: ${_LoadingLeft}px; top:${_LoadingTop}px; width: auto; height: 57px; line-height: 57px; padding-left: 50px; padding-right: 5px; no-repeat scroll 5px 10px;"></div>`;
+
+    document.write(_LoadingHtml);
+    document.onreadystatechange = completeLoading;
+    function completeLoading() {
+    if (document.readyState == "complete") {
+    var loadingMask = document.getElementById('loadingDiv');
+    loadingMask.parentNode.removeChild(loadingMask);
+    }
+    }
+    </script>
+
+	</head>
+
+
+	<body>
+		<!-- Header -->
+			<header class="header">
+
+				<a class='logo-a' href="index.html"><img class="logo" src="images/logo.png"></a>
+				<!--nav-->
+		   
+		   <div class= "main-nav">
+			   <div class="main-nav-item">
+				   <a href="index.html?tag=women" class='women'>女&emsp;裝</a>
+			   </div>
+			   <div class="space">|</div>
+			   <div class="main-nav-item">
+				   <a href="index.html?tag=men" class='men'>男&emsp;裝</a>
+			   </div>
+			   <div class="space">|</div>
+			   <div class="main-nav-item">
+				   <a href="index.html?tag=accessories" class='accessories'>配&emsp;件</a>
+			   </div>
+			   </div>
+
+<div class="search">
+    <input class="search-input" type="text"> 
+    <img class='search-icon' src="images/search.png">			  
+</div>
+
+<div class="cart-member">
+	<a href="cart.html">
+<div class="cart"><img class="cart-img" src="images/cart.png"></div>
+<div class='cart-number'>0</div>
+    </a>
+<div class="member"><img class="member-img" src="images/member.png"></div>
+    </div>     
+<div>
+	<img class="mobile-search-icon" src="images/search.png">
+		</div>
+
+		<div class="sticker">
+            <div class="sticker-cart">
+                <a href="cart.html">
+                    <button type="button" class="mobile-cart-btn">
+                    <img class="mobile-cart-img" src="images/cart-mobile.png">
+                    <div class='mobile-cart-number'>0</div>
+                    <p class="mobile-cart-text">購物車</p></button></a></div>
+		<div class="mobile-space">|</div>	
+		<div class="sticker-member">
+			<button type="button" class="mobile-member-btn">
+				<img class="mobile-member-img" src="images/member-mobile.png">
+				<p class="mobile-member-text">會員</p>
+			</button></div>
+			</div>
+
+  </header>
+
+		<!-- Banner -->
+<div class="banner-top"></div>
+
+   <div class= "mobile-navlist">
+	<div class="mobile-navlist-item">
+		<a href="index.html?tag=women" class='mobile-women'>女裝</a>
+	</div>
+	<div class="mobile-space">|</div>
+	<div class="mobile-navlist-item">
+		<a href="index.html?tag=men" class='mobile-men'>男裝</a>
+	</div>
+	<div class="mobile-space">|</div>
+	<div class="mobile-navlist-item">
+		<a href="index.html?tag=accessories" class='mobile-accessories'>配件</a>
+	</div>
+    </div>
+
+	
+        <!-- content-->
+    <div class='cart-content'>
+<div class='cart-page'>HOME > BAG</div>
+<div class='cartboxes-title'>
+    <div class='cartboxes-p1'>購物車(<div class='cartbox-qty'>0</div>)</div>
+    <div class='cartboxes-p'>數量</div>
+    <div class='cartboxes-p'>單價</div>
+    <div class='cartboxes-p'>小計</div>
+</div>
+<div class='cartboxes'>
+    <!--<div class='cartbox'>
+     <img class='cartbox-img' src="main.jpg">
+        <div class='cartbox-des'>
+            <div class='item-name'>xx</div>
+            <div class='item-id'>xx</div>
+            <div class='item-color'>顏色｜x</div>
+            <div class='item-size'>尺寸｜x</div>   
+        </div>
+    <div class='mobile-cartbox-bottom-title'>
+      <div class='mobile-cartboxes-p' id='m-n'>數量</div>
+      <div class='mobile-cartboxes-p' id='m-p'>單價</div>
+      <div class='mobile-cartboxes-p' id='m-t'>小計</div>
+    </div>    
+      <div class='mobile-cartbox-bottom'>
+            <form class='item-amount'>
+              <select class="pick-amount">
+              <option value="homepay">1</option>  
+                </select> 
+            </form>
+        <div class='item-per-price'>NT.xxx</div>
+        <div class='item-total-price'>NT.xxx</div>  
+    </div>
+       <div><img class='item-remove-img' src="images/cart-remove.png"></div> 
+    </div>--> 
+<!--
+    <div class='cartbox'>
+        <img class='cartbox-img' src="main.jpg">
+        <div class='cartbox-des'>
+            <div class='item-name'>xx</div>
+            <div class='item-id'>xx</div>
+            <div class='item-color'>顏色｜x</div>
+            <div class='item-size'>尺寸｜x</div>
+        </div>
+        <div class='mobile-cartbox-bottom-title'>
+            <div class='mobile-cartboxes-p'>數量</div>
+            <div class='mobile-cartboxes-p'>單價</div>
+            <div class='mobile-cartboxes-p'>小計</div>
+          </div>    
+        <div class='mobile-cartbox-bottom'>
+            <div class='item-amount'>
+                <div class='item-number'>1</div>
+                <div class='up-down-btn'>
+                <button class='up-btn' disabled>▲</button>
+                <button class='down-btn' disabled>▼</button>
+                </div>
+            </div>
+            <div class='item-per-price'>NT.xxx</div>
+            <div class='item-total-price'>NT.xxx</div>
+        </div>
+            <img class='item-remove-img' src="cart-remove.png">
+        </div>  -->
+</div>
+
+<div class='delivery-pay'>
+  <div class='delivery-p'>配送國家</div>
+  <form>
+    <select class="pick-place">
+    　<option value="taiwan">臺灣及離島</option>
+    </select>
+    </form>
+  <div class='pay-p'>付款方式</div>
+    <form>
+        <select class="pick-pay">
+        　<option value="home-card">宅配信用卡付款</option>
+        <option value="store-card">超商信用卡付款</option>
+        </select>
+    </form>
+</div>
+
+<div class='cart-reminder'>※提醒您：<br>
+    ●選擇宅配－請填寫正確收件人資訊，避免包裹配送不達<br>
+    ●選擇超商－請填寫正確收件人姓名（與證件相符），避免無法領取
+</div>
+
+<div class='client-info'>訂購資料</div>
+<div class='client-name'>
+    <div class='client-name-p'>收件人姓名</div>
+    <input class="client-name-input" type="text"></div>
+<div class='client-name-note'>務必填寫完整收件人姓名，避免包裹無法順利簽收</div>
+<div class='client-phone'>
+    <div class='client-phone-p'>手機</div>
+    <input class="client-phone-input" placeholder="例如：0912345678" type="text"></div> 
+<div class='client-email'>
+    <div class='client-email-p'>email</div>
+    <input class="client-email-input" placeholder="例如：123@gmail.com" type="text"></div>    
+<div class='client-address'>
+    <div class='client-address-p'>地址</div>
+    <input class="client-address-input" type="text"></div> 
+<div class='client-time'>
+    <div class='client-time-p'>配送時間</div>
+    <input class="client-time-input" id='morning' value='morning' type="radio" name='time'> 08:00-12:00
+    <input class="client-time-input" id='afternoon' value ='afternoon' type="radio" name='time'> 14:00-18:00
+    <input class="client-time-input" id='anytime' value='anytime' type="radio" name='time' checked> 不指定
+</div>
+<!-- tappay-->
+<div class="payment-info">
+    <form class="form" action="">
+        <div class="form-container" id="tappay-container">
+            <div class="card-title">信用卡號</div>
+            <div class="tpfield" id="card-number"></div>
+            <div class="card-title">有效期限</div>
+            <div class="tpfield" id="card-expiration-date"></div>
+            <div class="card-title">安全號碼</div>
+            <div class="tpfield" id="card-ccv"></div>
+        </div>
+    </form>
+</div>
+
+<!-- tappay -->
+
+<div class='pay-price'>
+<div class='total-price'><p>總金額</p>
+    <div class='nt'>NT.&nbsp</div>
+    <div class='total-price-num'>0</div>
+</div>
+<div class='delivery-fee'><p>運費</p>
+    <div class='nt'>NT.&nbsp</div>
+    <div class='delivery-fee-num'>0</div>
+</div>
+<hr class='pay-price-line' align='right' size='1px'>
+<div class='must-pay'><p>應付金額</p>
+    <div class='nt'>NT.&nbsp</div>
+    <div class='must-pay-num'>0</div>
+</div>
+<button class='confirm-pay'>確認付款</button>
+</div>
+     
+</div>
+
+		<!-- Footer -->
+			<footer class="footer">
+
+	   <div class="footer-list">
+ <div class="footer-list-item">
+  <a href="#">關於Stylish</a></div>
+  <div class="footer-list-item"> 
+  <a href="#">服務條款</a></div>
+  <div class="footer-list-item">
+  <a href="#">隱私政策</a></div>
+  <div class="footer-list-item">
+	<a href="#">聯絡我們</a></div>
+	<div class="footer-list-item">
+    <a href="#">FAQ</a></div>
+		</div>
+		
+		<div class="social-links">
+		<a href="#"><img class="line" src="images/line.png" width="1rem"></a>
+		<a href="#"><img class="twitter" src="images/twitter.png" width="1rem"></a>
+		<a href="#"><img class="facebook" src="images/facebook.png" width="1rem"></a>
+		</div>	
+
+	</div>
+        <div class="copyright"> &copy; 2018. All rights reserved.</div>
+			
+	</footer>
+    <div class="blank"></div>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.2.0"></script>
+    <script src='cart.js'></script>
+    <script src="fb-login.js"></script>
+	</body>
+</html>
