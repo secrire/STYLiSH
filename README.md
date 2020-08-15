@@ -21,7 +21,7 @@
 * Git / GitHub
 * Backend RESTful APIs by AJAX 
   
-## 👀 Demo
+## 👀 Demonstration
     
 #### Banner Campaign Slide Effect   
   
@@ -30,4 +30,6 @@
 #### Check Out Payment 
   
   
+## 📬 Contact
+E-mail: allie.shwu@gmail.com 
 
