@@ -23,11 +23,11 @@
   
 ## 👀 [Demo](https://github.com/ushi731/STYLiSH#demo)
     
-### Banner Campaign Slide Effect   
+#### Banner Campaign Slide Effect   
   
-### Infinite Scroll Paging  
+#### Infinite Scroll Paging  
   
-### Check Out Payment 
+#### Check Out Payment 
   
   
 
