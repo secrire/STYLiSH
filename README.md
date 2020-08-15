@@ -1,7 +1,8 @@
 # STYLiSH  
 #### A Clothing E-commerce Website.
   
-🏫 AppWorks E-commerce Project (☝🏼 my first website project)  
+🏫 AppWorks E-commerce Project  
+☝🏼 My First Website   
 🖥 https://ushi731.github.io/STYLiSH/
   
   
