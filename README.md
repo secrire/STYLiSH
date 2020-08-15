@@ -11,7 +11,7 @@
 * To pick up the colour / size / amount by stock of products.   
 * To check out by card payment and get delivery by personal contact details.  
 
-## 👩🏻‍💻 [Technologies](https://github.com/ushi731/STYLiSH#technologies)
+## 👩🏻‍💻 Technologies
   
 * HTML / CSS
 * Pure JavaScript
@@ -21,7 +21,7 @@
 * Git / GitHub
 * Backend RESTful APIs by AJAX 
   
-## 👀 [Demo](https://github.com/ushi731/STYLiSH#demo)
+## 👀 Demo
     
 #### Banner Campaign Slide Effect   
   
