@@ -21,13 +21,6 @@
 * Git / GitHub
 * Backend RESTful APIs by AJAX 
   
-## 👀 Demonstration
-    
-#### Banner Campaign Slide Effect   
-  
-#### Infinite Scroll Paging  
-  
-#### Check Out Payment 
   
   
 ## 📬 Contact
