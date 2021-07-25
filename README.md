@@ -2,7 +2,7 @@
 #### A Clothing E-commerce Website.
   
 🏫 AppWorks E-commerce Project - My First Website   
-🖥 https://ushi731.github.io/STYLiSH/
+🖥 https://secrire.github.io/STYLiSH/
   
   
 * To log in member system by Facebook.   
