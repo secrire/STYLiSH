@@ -14,9 +14,10 @@
             FB.api('/me',{
                 'fields':'id,name,email,picture'
             }, function(response){
-                console.log(response);
                 document.querySelector('.fb-name').textContent = response.name;
                 document.querySelector('.fb-email').textContent = response.email;
+                document.querySelector('.fb-img').src = `http://graph.facebook.com/${response.id}/picture?type=large`;
+                // document.querySelector('.fb-img').src = response.picture.data.url;
             });
         }
     });

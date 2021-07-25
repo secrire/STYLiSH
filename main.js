@@ -19,7 +19,6 @@ xhr.onreadystatechange = function() {
     }
 };
 xhr.responseType = 'json';  //讓取到的資料response變成json型
-console.log(xhr.response);
 };
 
 // --- create HTML ---
@@ -41,7 +40,7 @@ productImg.className = "product-img";
 productImg.src = res.data[i].main_image;
 
 productImg.addEventListener('click', () => {
-  window.location=`https://ushi731.github.io/Front-End-Class-Batch11/students/szuhan/product.html?id=${res.data[i].id}`;
+  window.location=`https://secrire.github.io/Front-End-Class-Batch11/students/szuhan/product.html?id=${res.data[i].id}`;
   })
 
 let productColors = document.createElement('div');
@@ -89,7 +88,7 @@ productImg.className = "product-img";
 productImg.src = res.data[i].main_image;
 
 productImg.addEventListener('click', () => {     //直接在create的element上附加click功能，再appendchild到頁面上
-  window.location=`https://ushi731.github.io/Front-End-Class-Batch11/students/szuhan/product.html?id=${res.data[i].id}`;
+  window.location=`https://secrire.github.io/Front-End-Class-Batch11/students/szuhan/product.html?id=${res.data[i].id}`;
   })
 
 let productColors = document.createElement('div');
@@ -125,7 +124,6 @@ let currentUrl = location.href;
 let currentUrlNew = new URL(currentUrl);
 let currentUrlTag = currentUrlNew.searchParams.get('tag');
 let currentUrlSearchText = currentUrlNew.searchParams.get('searchText');
-console.log(currentUrlTag);
 
 if( currentUrlTag === null && currentUrlSearchText == null){    //不是undefined,可console.log確認
   productCategories = "all";
@@ -169,7 +167,7 @@ getData(`https://api.appworks-school.tw/api/1.0/products/search?keyword=${curren
 document.querySelector('.women').addEventListener('click', () => {
     productCategories = "women";
     getData(`https://api.appworks-school.tw/api/1.0/products/${productCategories}`), showData;
-    //window.location = `https://ushi731.github.io/Front-End-Class-Batch11/students/szuhan/index.html?tag=${productCategories}`
+    //window.location = `https://secrire.github.io/Front-End-Class-Batch11/students/szuhan/index.html?tag=${productCategories}`
   })
   
 document.querySelector('.men').addEventListener('click', () => {
@@ -257,7 +255,6 @@ function changeBanner (res){
     bannerText.className = "banner-text";
 
     let story = res.data[i].story.split("\r\n");
-    //console.log (story);
     for (let k=0 ; k< story.length ; k+=1){
       if( k < story.length -1){
       let bannerTextGroup1 = document.createElement ("div");
@@ -274,7 +271,8 @@ function changeBanner (res){
 
     let bannerPhoto = document.createElement('img');
     bannerPhoto.className = `banner-photo`;
-    bannerPhoto.src = `https://api.appworks-school.tw${res.data[i].picture}`;
+    // bannerPhoto.src = `https://api.appworks-school.tw${res.data[i].picture}`;
+    bannerPhoto.src = res.data[i].picture;
     
     let bannerDots = document.createElement('div');
      bannerDots.className = "banner-dots";
@@ -323,8 +321,6 @@ function slide(){
   
 slide();
 setInterval(slide, 10000);    //change to next slide every 10 seconds automatically
- 
-console.log(res);
 }
 
 //Connect to Marketing Campaign API by AJAX for the links, stories and image paths.

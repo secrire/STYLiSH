@@ -85,8 +85,9 @@ ul li{
   width: 140px;
   border: 1px grey solid;
   border-radius: 60px;
-  text-align: center;
+  text-align: left;
   outline: none;
+  padding: 0 10px;
 }
 .mobile-search-icon{
   display: none;

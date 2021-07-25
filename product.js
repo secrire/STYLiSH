@@ -31,7 +31,6 @@ xhr.onreadystatechange = function() {
       isLoading=false;    //要變回false 才會成立條件 觸發下一頁
       if(xhr.status === 200){    //雙重條件 以免readyState還在123-4就consolelog(error)
         renderProductInfo(xhr.response);
-        console.log(xhr.response);
       }else{
         console.log(`Error: ${xhr.status} Error Message: ${xhr.statusText}`);
       }
@@ -276,7 +275,6 @@ document.querySelectorAll('.add-to-cart').forEach((addToCart)=> addToCart.addEve
         if(bought.id === list[i].id && 
           bought.color.code === list[i].color.code && 
           bought.size === list[i].size){
-            console.log('ok') 
             list[i].qty = bought.qty;
             localStorage.setItem('list', JSON.stringify(list));
             
@@ -296,7 +294,7 @@ document.querySelectorAll('.add-to-cart').forEach((addToCart)=> addToCart.addEve
       totalprice = list.map(item => item.price * item.qty);
       subtotal = totalprice.reduce((sum,e) => sum + e);
 
-      console.log(list)    //此時的list已是push(bought)過後，不能再寫list.push(bought)
+      // console.log(list)    //此時的list已是push(bought)過後，不能再寫list.push(bought)
 
 
   //  localStorage.setItem('list', JSON.stringify(list)); 

@@ -275,7 +275,6 @@ if(xhr.readyState === 4){
   isLoading=false;    //要變回false 才會成立條件 觸發下一頁
   if(xhr.status === 200){    //雙重條件 以免readyState還在123-4就consolelog(error)
     checkStock(xhr.response);
-    console.log(JSON.parse(xhr.response));
   }else{
     console.log(`Error: ${xhr.status} Error Message: ${xhr.statusText}`);
   }}}
@@ -335,7 +334,6 @@ document.querySelector('.confirm-pay').addEventListener('click', ()=>{
        ){
         document.querySelector('.confirm-pay').style.opacity = '0.6';
         //document.querySelector('.confirm-pay').removeAttribute('disabled');     
-        console.log(prime);
         
         if(document.getElementById('morning').checked){
             checkedTime = document.getElementById('morning').value
@@ -402,7 +400,6 @@ document.querySelector('.confirm-pay').addEventListener('click', ()=>{
            if(xhr2.status === 200){    //雙重條件 以免readyState還在123-4就consolelog(error)
              localStorage.clear();
              let orderNum = JSON.parse(xhr2.responseText).data.number;
-             console.log(orderNum);
              window.location.href=`https://ushi731.github.io/Front-End-Class-Batch11/students/szuhan/thankyou.html?order=${orderNum}`;
            }else{
              console.log(`Error: ${xhr2.status} Error Message: ${xhr2.statusText}`);
@@ -429,7 +426,6 @@ document.querySelector('.confirm-pay').addEventListener('click', ()=>{
           isLoading=false;   
           if(xhr.status === 200){   
             accessToken = JSON.parse(xhr.responseText).data.access_token;
-            console.log(accessToken);
 
             // checkout ajax   在response後
        let xhr2 = new XMLHttpRequest();
@@ -452,7 +448,6 @@ document.querySelector('.confirm-pay').addEventListener('click', ()=>{
           if(xhr2.status === 200){    //雙重條件 以免readyState還在123-4就consolelog(error)
             localStorage.clear();
             let orderNum = JSON.parse(xhr2.responseText).data.number;
-            console.log(orderNum);
             window.location.href=`https://ushi731.github.io/Front-End-Class-Batch11/students/szuhan/thankyou.html?order=${orderNum}`;
           }else{
             console.log(`Error: ${xhr2.status} Error Message: ${xhr2.statusText}`);

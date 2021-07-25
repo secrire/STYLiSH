@@ -34,7 +34,6 @@ function checkLoginState(){
             FB.api('/me',{
                 'fields':'id,name,email,picture'
             }, function(response){
-                console.log(response);
                 //localStorage.setItem('userName', JSON.stringify(response.name));
                 //localStorage.setItem('userEmail', JSON.stringify(response.email));
                 //localStorage.setItem('userImg', JSON.stringify(response.picture));
@@ -42,7 +41,6 @@ function checkLoginState(){
                 window.location = `profile.html?client=${response.id}`;
             });
             let accessToken = response.authResponse.accessToken;
-            console.log(accessToken);
             localStorage.setItem('accessToken', JSON.stringify(accessToken));
         }else{
             login()
@@ -60,12 +58,11 @@ function login(){
             FB.api('/me',{
                 'fields':'id,name,email,picture'
             }, function(response){
-                console.log(`successful login for: ${response.name}`);
+                // console.log(`successful login for: ${response.name}`);
                
                 window.location = `profile.html?client=${response.id}`;   
             });
             let accessToken = response.authResponse.accessToken;
-            console.log(accessToken);
             localStorage.setItem('accessToken', JSON.stringify(accessToken));
         }
     }, {
