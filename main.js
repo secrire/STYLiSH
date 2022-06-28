@@ -40,7 +40,7 @@ productImg.className = "product-img";
 productImg.src = res.data[i].main_image;
 
 productImg.addEventListener('click', () => {
-  window.location=`${window.location.origin}/product.html?id=${res.data[i].id}`;
+  window.location=`${window.location.origin}/STYLiSH/product.html?id=${res.data[i].id}`;
   })
 
 let productColors = document.createElement('div');
@@ -88,7 +88,7 @@ productImg.className = "product-img";
 productImg.src = res.data[i].main_image;
 
 productImg.addEventListener('click', () => {     //直接在create的element上附加click功能，再appendchild到頁面上
-  window.location=`${window.location.origin}//product.html?id=${res.data[i].id}`;
+  window.location=`${window.location.origin}/STYLiSH/product.html?id=${res.data[i].id}`;
   })
 
 let productColors = document.createElement('div');

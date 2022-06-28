@@ -400,7 +400,7 @@ document.querySelector('.confirm-pay').addEventListener('click', ()=>{
            if(xhr2.status === 200){    //雙重條件 以免readyState還在123-4就consolelog(error)
              localStorage.clear();
              let orderNum = JSON.parse(xhr2.responseText).data.number;
-             window.location.href=`${window.location.origin}//thankyou.html?order=${orderNum}`;
+             window.location.href=`${window.location.origin}/STYLiSH/thankyou.html?order=${orderNum}`;
            }else{
              console.log(`Error: ${xhr2.status} Error Message: ${xhr2.statusText}`);
            }
@@ -448,7 +448,7 @@ document.querySelector('.confirm-pay').addEventListener('click', ()=>{
           if(xhr2.status === 200){    //雙重條件 以免readyState還在123-4就consolelog(error)
             localStorage.clear();
             let orderNum = JSON.parse(xhr2.responseText).data.number;
-            window.location.href=`${window.location.origin}/n/thankyou.html?order=${orderNum}`;
+            window.location.href=`${window.location.origin}/STYLiSH/thankyou.html?order=${orderNum}`;
           }else{
             console.log(`Error: ${xhr2.status} Error Message: ${xhr2.statusText}`);
           }
